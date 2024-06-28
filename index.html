@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+  </head>
+  <body>
+    <!-- TODO: answer here -->
+
+    <form id="form-student">
+      <label for="name">Fullname:</label>
+      <input type="text" id="input-name" />
+      <br />
+
+      <label for="Birth Date">Birth Date:</label>
+      <input type="date" id="input-date" />
+      <br />
+
+      <label for="Gender">Gender:</label>
+      <select name="Gender" id="input-gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <br />
+
+      <label for="Program Study">Program Study:</label>
+      <select name="Program Study" id="input-prody">
+        <option value="Ekonomi">Ekonomi</option>
+        <option value="Manajemen">Manajemen</option>
+        <option value="Akuntansi">Akuntansi</option>
+        <option value="Administrasi Publik">Administrasi Publik</option>
+        <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+        <option value="Hubungan Internasional">Hubungan Internasional</option>
+        <option value="Teknik Sipil">Teknik Sipil</option>
+        <option value="Arsitektur">Arsitektur</option>
+        <option value="Matematika">Matematika</option>
+        <option value="Fisika">Fisika</option>
+        <option value="Informatika">Informatika</option>
+      </select>
+      <br />
+      <input type="submit" value="Add student" id="add-btn" />
+    </form>
+
+    <br />
+    <table id="table-student">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Full Name</th>
+          <th>Birth Date</th>
+          <th>Gender</th>
+          <th>Student ID</th>
+          <th>Faculty</th>
+          <th>Program Study</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody id="student-data">
+        <tr>
+          <td>1</td>
+          <td>Ardhito Prasmul</td>
+          <td>21/05/2003</td>
+          <td>Male</td>
+          <td>2702134222</td>
+          <td>Fakultas Ilmu Sosial dan Politik</td>
+          <td>Administrasi Bisnis</td>
+          <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
