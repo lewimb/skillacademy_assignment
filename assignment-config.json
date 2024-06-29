@@ -1,0 +1,16 @@
+{
+	"name": "html-assignment-student-portal-2",
+	"course": "Basic Frontend Web Development",
+	"title": "Assignemnt - Student Portal 2",
+	"order": 999,
+	"topics": [
+		"HTML",
+		"CSS"
+	],
+	"image": "nodejs-basic",
+	"command": "npm run test",
+	"totalTestCase": 6,
+	"metadata": {
+		"type": "assignment"
+	}
+}

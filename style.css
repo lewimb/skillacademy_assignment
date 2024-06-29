@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(131, 168, 198);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#grid-container {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+#mid-content {
+  display: flex;
+}
+
+.mid-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mid-container input {
+  margin-right: 5px;
+}
+.mid-container select {
+  margin-left: 5px;
+}
+
+select {
+  background: none;
+  appearance: none;
+}
+
+form label {
+  display: flex;
+  flex-direction: inline;
+  padding: 5px;
+}
+#add-btn {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 20px;
+  width: 8vw;
+  font-weight: 400;
+}
+#input-name {
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+table th,
+table td {
+  padding-block: 12px;
+  padding-inline: 16px;
+}
