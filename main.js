@@ -6,30 +6,37 @@ function process_argv() {
 }
 
 function krsApplication(name, programId, gpa) {
-  let sks = 0;
-  let result = "";
-  if (gpa >= 2.99 && gpa <= 4) {
+  let sks, result;
+  const prodi = {
+    ACC: "Akuntansi",
+    HIN: "Hubungan Internasional",
+    IAB: "Ilmu Administrasi Bisnis",
+    IAP: "Ilmu Administrasi Publik",
+    MJN: "Manajemen",
+    TKM: "Teknik Kimia",
+  };
+
+  if (gpa < 0 || gpa > 4) {
+    return "Invalid gpa number";
+  }
+
+  if (gpa >= 3) {
     sks = 24;
-  } else if (gpa >= 2.5 && gpa < 2.99) {
+  } else if (gpa >= 2.5) {
     sks = 21;
-  } else if (gpa >= 2 && gpa < 2.5) {
+  } else if (gpa >= 2) {
     sks = 18;
-  } else if (gpa >= 1.5 && gpa < 2) {
+  } else if (gpa >= 1.5) {
     sks = 15;
-  } else if (gpa >= 0 && gpa < 1.5) {
+  } else if (gpa >= 0) {
     sks = 12;
-  } else if (gpa < 0 && gpa > 4) {
-    ("Invalid gpa number");
   }
 
-  switch (gpa) {
-    case gpa >= 3:
-      result = `txt Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu dapat mengambil SKS sebanyak ${sks} SKS untuk semester depan.`;
-      break;
+  if (gpa >= 3)
+    result = `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu dapat mengambil SKS sebanyak ${sks} SKS untuk semester depan.`;
+  else
+    result = `Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi ${prodi[programId]} dan hanya dapat mengambil SKS sebanyak ${sks} SKS untuk semester depan.`;
 
-    case gpa < 3:
-      result = `txt Hallo ${name}, berdasarkan IP semester lalu sebesar ${gpa}, kamu diwajibkan melakukan bimbingan dengan dosen pembimbing pada prodi <nama prodi> dan hanya dapat mengambil SKS sebanyak ${sks} SKS untuk semester depan.`;
-  }
   return result; // TODO: replace this
 }
 
