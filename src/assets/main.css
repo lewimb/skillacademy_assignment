@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+}
+
+.sidebar {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-right: 0.5px solid;
+  justify-content: space-between;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  padding-block: 1rem;
+  background-color: blue;
+}
+
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: transparent !important;
+}
+
+.btn:hover {
+  background-color: azure !important;
+}
