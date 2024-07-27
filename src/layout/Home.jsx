@@ -32,60 +32,6 @@ const Home = () => {
       </div>
       <Outlet />
     </div>
-    // <div
-    //   style={{
-    //     display: "flex",
-    //   }}
-    // >
-    //   <div
-    //     style={{
-    //       height: "100vh",
-    //       width: "280px",
-    //       background: "blue",
-    //       position: "sticky",
-    //       top: "0",
-    //       display: "flex",
-    //       flexDirection: "column",
-    //       justifyContent: "space-between",
-    //       padding: "0.5rem",
-    //     }}
-    //   >
-    //     <div
-    //       style={{
-    //         display: "flex",
-    //         flexDirection: "column",
-    //         gap: "0.5rem",
-    //       }}
-    //     >
-    //       <button
-    //         style={{
-    //           background: "white",
-    //           padding: "1rem",
-    //         }}
-    //       >
-    //         Hello
-    //       </button>
-    //       <button
-    //         style={{
-    //           background: "white",
-    //           padding: "1rem",
-    //         }}
-    //       >
-    //         Hello
-    //       </button>
-    //     </div>
-
-    //     <button
-    //       style={{
-    //         background: "white",
-    //         padding: "1rem",
-    //       }}
-    //     >
-    //       Hello
-    //     </button>
-    //   </div>
-    //   <Outlet />
-    // </div>
   );
 };
 

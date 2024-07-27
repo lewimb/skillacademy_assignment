@@ -1,9 +1,9 @@
-// TODO: answer here
 import { Navigate } from "react-router-dom";
 
 function ProtectedRoute({ children }) {
-  // TODO: answer here
-  
+  if (!localStorage.getItem("user")) {
+    return <Navigate to="/signin" replace />;
+  }
 
   return children;
 }

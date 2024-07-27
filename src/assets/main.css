@@ -1,3 +1,7 @@
+* {
+  overflow-x: unset;
+}
+
 .page {
   display: flex;
 }
@@ -13,7 +17,6 @@
   position: sticky;
   top: 0px;
   padding-block: 1rem;
-  background-color: blue;
 }
 
 .menu-wrap {
@@ -27,4 +30,111 @@
 
 .btn:hover {
   background-color: azure !important;
+}
+
+.photos-page {
+  padding: 2rem 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.total-post {
+  padding-block: 1rem;
+  font-size: 95%;
+}
+.fullname {
+  font-weight: bold;
+  font-size: 85%;
+}
+.desc {
+  font-size: 85%;
+}
+.photo-post {
+  border-top: 1px solid lightgray;
+}
+
+.photo-post {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.photo-post > * {
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.photo-post > * img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.user-detail-container {
+  width: 100%;
+  gap: 1.5rem;
+  display: flex;
+  margin-inline: auto;
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  flex: 0;
+  align-self: start;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 9999px;
+  aspect-ratio: 1/1;
+}
+
+.detail-photo-page {
+  display: flex;
+  margin-inline: auto;
+  gap: 20px;
+}
+
+.detail-photo-page > img {
+  max-width: 450px;
+  width: 100%;
+  object-fit: contain;
+  background-color: lightgray;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.comment-container > .profile-pic {
+  width: 40px;
+}
+
+.comment-text {
+  font-size: small;
+}
+
+.comment-text > h3 {
+  font-weight: bold;
+}
+
+.trash {
+  max-width: 25px;
 }

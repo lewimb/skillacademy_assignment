@@ -1,11 +1,23 @@
 // TODO: answer here
+import { Button } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
-  // TODO: answer here
+  const navigate = useNavigate();
 
   return (
     <>
-      <h1>Not Found</h1>
+      <div className="error-page">
+        <h1>404 Not Found</h1>
+        <Button
+          data-testid="back"
+          type="button"
+          className="back-button"
+          onClick={() => navigate(-1)}
+        >
+          ke halaman sebelumnya
+        </Button>
+      </div>
     </>
   );
 };
